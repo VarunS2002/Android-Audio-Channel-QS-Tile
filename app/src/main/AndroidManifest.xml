@@ -20,9 +20,12 @@
                 android:name="com.varuns2002.audio_channel_qs_tile.AudioChannelQSTile"
                 android:permission="android.permission.BIND_QUICK_SETTINGS_TILE"
                 android:exported="true">
-        <intent-filter>
-            <action android:name="android.service.quicksettings.action.QS_TILE"/>
-        </intent-filter>
+            <meta-data
+                    android:name="android.service.quicksettings.TOGGLEABLE_TILE"
+                    android:value="true"/>
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE"/>
+            </intent-filter>
         </service>
     </application>
 
