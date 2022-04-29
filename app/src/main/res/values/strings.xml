@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Audio Channel QS Tile</string>
+    <string name="qs_tile_label">Toggle Audio Channel</string>
+</resources>

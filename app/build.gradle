@@ -1,0 +1,43 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+}
+
+android {
+    compileSdk 32
+
+    defaultConfig {
+        applicationId "com.varuns2002.audio_channel_qs_tile"
+        minSdk 24
+        targetSdk 22
+        versionCode 1
+        versionName "1.0.0"
+    }
+
+    buildTypes {
+        debug {
+//            minifyEnabled true
+//            shrinkResources true
+//            proguardFiles 'proguard-rules.pro'
+        }
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+
+    packagingOptions {
+        exclude "/META-INF/*.kotlin_module"
+        exclude "**/kotlin/**"
+    }
+}
