@@ -13,7 +13,6 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true">
         <!-- TODO: Set Icon-->
-        <!-- TODO: Reconsider exported-->
         <service
                 android:label="@string/qs_tile_label"
                 android:icon="@drawable/ic_launcher_foreground"
