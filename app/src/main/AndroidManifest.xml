@@ -15,7 +15,7 @@
         <!-- TODO: Set Icon-->
         <service
                 android:label="@string/qs_tile_label"
-                android:icon="@drawable/ic_launcher_foreground"
+                android:icon="@drawable/ic_toggle_mono"
                 android:name="com.varuns2002.audio_channel_qs_tile.AudioChannelQSTile"
                 android:permission="android.permission.BIND_QUICK_SETTINGS_TILE"
                 android:exported="true">
