@@ -19,17 +19,17 @@ class AudioChannelQSTile : TileService() {
         }
         if (monoEnabled) {
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
-                qsTile.label = "Audio Channel"
-                qsTile.subtitle = "Mono"
+                qsTile.label = getString(R.string.title)
+                qsTile.subtitle = getString(R.string.label_and_subtitle_mono)
             } else {
-                qsTile.label = "Mono"
+                qsTile.label = getString(R.string.label_and_subtitle_mono)
             }
         } else {
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
-                qsTile.label = "Audio Channel"
-                qsTile.subtitle = "Stereo"
+                qsTile.label = getString(R.string.title)
+                qsTile.subtitle = getString(R.string.label_and_subtitle_stereo)
             } else {
-                qsTile.label = "Stereo"
+                qsTile.label = getString(R.string.label_and_subtitle_stereo)
             }
         }
         qsTile.state = Tile.STATE_ACTIVE
@@ -54,18 +54,18 @@ class AudioChannelQSTile : TileService() {
         if (!monoEnabled) {
             Settings.System.putInt(contentResolver, "master_mono", 1)
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
-                qsTile.label = "Audio Channel"
-                qsTile.subtitle = "Mono"
+                qsTile.label = getString(R.string.title)
+                qsTile.subtitle = getString(R.string.label_and_subtitle_mono)
             } else {
-                qsTile.label = "Mono"
+                qsTile.label = getString(R.string.label_and_subtitle_mono)
             }
         } else {
             Settings.System.putInt(contentResolver, "master_mono", 0)
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
-                qsTile.label = "Audio Channel"
-                qsTile.subtitle = "Stereo"
+                qsTile.label = getString(R.string.title)
+                qsTile.subtitle = getString(R.string.label_and_subtitle_stereo)
             } else {
-                qsTile.label = "Stereo"
+                qsTile.label = getString(R.string.label_and_subtitle_stereo)
             }
         }
         qsTile.updateTile()

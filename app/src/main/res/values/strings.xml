@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">Audio Channel QS Tile</string>
     <string name="qs_tile_label">Toggle Audio Channel</string>
+    <string name="title">Audio Channel</string>
+    <string name="label_and_subtitle_mono">Mono</string>
+    <string name="label_and_subtitle_stereo">Stereo</string>
 </resources>
