@@ -12,7 +12,6 @@
             android:icon="@mipmap/ic_launcher"
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true">
-        <!-- TODO: Set Icon-->
         <service
                 android:label="@string/qs_tile_label"
                 android:icon="@drawable/ic_toggle_mono"
