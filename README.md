@@ -1,7 +1,12 @@
+<img width="128" height="128" src="https://i.imgur.com/jKAoNAt.png" alt="icon_square">
+
 # Android-Audio-Channel-QS-Tile
 
 Android app which adds a Quick Settings Tile to toggle “Audio Channel” option (Mono/Stereo) in Accessibility Settings -> Audio Adjustment.
 
+## [Downloads](https://github.com/VarunS2002/Android-Audio-Channel-QS-Tile/releases/)
+
+> [![APK: v1.0.0](https://img.shields.io/badge/APK-v1.0.0-brightgreen)](https://github.com/VarunS2002/Android-Audio-Channel-QS-Tile/releases/download/1.0.0/Android-Audio-Channel-QS-Tile_1.0.0.apk)
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
 ## Requirements:
