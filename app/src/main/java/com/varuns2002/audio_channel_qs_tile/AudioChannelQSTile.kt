@@ -1,6 +1,7 @@
 package com.varuns2002.audio_channel_qs_tile
 
 import android.content.Intent
+import android.graphics.drawable.Icon
 import android.net.Uri
 import android.os.Build
 import android.provider.Settings
@@ -18,6 +19,9 @@ class AudioChannelQSTile : TileService() {
             false
         }
         if (monoEnabled) {
+            qsTile.icon = Icon.createWithResource(
+                this, resources.getIdentifier("ic_toggle_mono", "drawable", packageName)
+            )
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
                 qsTile.label = getString(R.string.title)
                 qsTile.subtitle = getString(R.string.label_and_subtitle_mono)
@@ -25,6 +29,9 @@ class AudioChannelQSTile : TileService() {
                 qsTile.label = getString(R.string.label_and_subtitle_mono)
             }
         } else {
+            qsTile.icon = Icon.createWithResource(
+                this, resources.getIdentifier("ic_toggle_stereo", "drawable", packageName)
+            )
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
                 qsTile.label = getString(R.string.title)
                 qsTile.subtitle = getString(R.string.label_and_subtitle_stereo)
@@ -53,6 +60,9 @@ class AudioChannelQSTile : TileService() {
         }
         if (!monoEnabled) {
             Settings.System.putInt(contentResolver, "master_mono", 1)
+            qsTile.icon = Icon.createWithResource(
+                this, resources.getIdentifier("ic_toggle_mono", "drawable", packageName)
+            )
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
                 qsTile.label = getString(R.string.title)
                 qsTile.subtitle = getString(R.string.label_and_subtitle_mono)
@@ -61,6 +71,9 @@ class AudioChannelQSTile : TileService() {
             }
         } else {
             Settings.System.putInt(contentResolver, "master_mono", 0)
+            qsTile.icon = Icon.createWithResource(
+                this, resources.getIdentifier("ic_toggle_stereo", "drawable", packageName)
+            )
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
                 qsTile.label = getString(R.string.title)
                 qsTile.subtitle = getString(R.string.label_and_subtitle_stereo)
